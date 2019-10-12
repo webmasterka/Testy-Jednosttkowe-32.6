@@ -1,0 +1,75 @@
+.Player {
+	border-bottom: 2px solid #222f3e;
+	border-left: 2px solid #222f3e;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.Player:first-of-type {
+	border-top: 2px solid #222f3e;
+}
+
+.Player:nth-child(odd) {
+	background-color: #00BFFF;
+	color: #fff;
+}
+
+.Player:nth-child(even) {
+	background-color: #1E90FF;
+	color: #fff;
+}
+
+
+
+.Player__index, .Player__name, .Player__score, .Player__button, .Player__button_remove {
+	border-right: 2px solid #222f3e;
+	padding: 5px;
+	font-weight: 700;
+	display: inline-block;
+}
+
+.Player__name {
+	width: 150px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.Player__score {
+	width: 50px;
+	text-align: center;
+
+}
+
+.Player__button {
+	width: 40px;
+	text-align: center;
+}
+
+.Player__button_remove {
+	width: 30px;
+	text-align: center;
+	color: #FFF;
+	background-color: #eb2f06;
+}
+
+.Player__button:hover, .Player__button_remove:hover {
+	cursor: pointer;
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+.Player__button:nth-child(even):hover {
+	background-color: #0a3d62;
+	color: #eb2f06;
+}
+
+.Player__button:nth-child(odd):hover {
+	background-color: #0a3d62;
+	color: #f6b93b;
+}
+
+.Player__button_remove:hover {
+	background-color: #fff;
+	color: #eb2f06;
+	text-transform: uppercase;
+}
